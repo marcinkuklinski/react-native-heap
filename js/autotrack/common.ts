@@ -109,7 +109,7 @@ const getReactInternalFiber = (comp: Component) => {
     return comp._reactInternalFiber;
   }
 
-  return null;
+  return false;
 };
 
 // Traverse up the hierarchy from the current component up to the root, and return an array of

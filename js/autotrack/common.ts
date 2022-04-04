@@ -101,15 +101,7 @@ const getComponentHierarchyTraversal: (
 };
 
 const getReactInternalFiber = (comp: Component) => {
-  if (comp._reactInternals) {
-    return comp._reactInternals;
-  }
-
-  if (comp._reactInternalFiber) {
-    return comp._reactInternalFiber;
-  }
-
-  return comp._reactInternals || comp._reactInternalFiber;
+  return comp._reactInternals;
 };
 
 // Traverse up the hierarchy from the current component up to the root, and return an array of
